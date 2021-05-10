@@ -19,7 +19,7 @@ To explore the app, you can use the below login credentials:
 - Email: admin@email.com
 - Password: password
  
-![](jetflix.gif)
+![](client/src/assets/jetflix.gif)
  
 ### Project Brief
 - Build a full-stack application by making your own backend and your own frontend
@@ -63,7 +63,7 @@ To explore the app, you can use the below login credentials:
 ##### Concept
 Our idea for Jetflix came together quickly as we all have a shared interest in travel and were missing going on holiday due to COVID-19. We wanted to take on the challenge of making a clone of an existing website and we picked Netflix because of its great user interface and browsing-based structure. When we decided we wanted to incorporate a social media aspect where users could interact Instagram felt like the best choice as many people use this platform already to share holiday pictures.
  
-![](jetflix.png)
+![](client/src/assets/jetflix.png)
  
 ##### Day 1 - Wireframes & planning
 We used my whiteboard to create a wireframe with all different pages and links between these. As we were working in a group of 4 for the first time and there were many different aspects to be worked on we decided to use Trello to organize the project into smaller chunks.
@@ -79,7 +79,7 @@ After the models were set up, we created the routes for login, registration, rat
 ##### Day 3 till 8 - Frontend
 Once the frontend was connected we divided tasks and I started with the landing page. With the use of Semantic UI I created hover over buttons for login, registration and a guest path.
  
-![](landing.gif)
+![](client/src/assets/landing.gif)
  
 We wanted to work with Semantic UI framework for the navbar but realised the framework made it more difficult to quickly put this together. Justine was working on this but after it was put together using Semantic we decided Bulma would work better and I helped out by changing the framework to Bulma instead.
  
@@ -103,12 +103,12 @@ useEffect(() => {
 ##### Sliders
 Next I worked on the sliders below the hero, I used `react-slick` for this. I created sliders for ‘My List’, ‘Recommended for you’, ‘Must See’ and ‘Trending Now’. I added CSS to create the picture popup effect Netflix has when you hover over an image. After adding in the sliders I needed to work on filtering the data from our backend API to show different destinations in each slider. I filtered the data for the ‘Must See’ slider to show all European destinations and then started working on ‘Recommended for you’.
  
-![](slider.gif)
+![](client/src/assets/slider.gif)
  
 For the ‘Recommended for you’ slider I needed to amend the registration page.
 Oli and Andrew worked on the Login and Registration pages and after these were setup I added error handling to both as well as the search function on the Registration page with the use of `react-select`. The tags chosen when registering would be saved in an array in the user model and are used to display ‘Recommended for you’ on the homepage. We also improved the styling with a background image that Justine created in photoshop and I added Bulma framework for the styling.
  
-![](register.gif)
+![](client/src/assets/register.gif)
  
 Next was the ‘My List’ slider. I added a button to the text on the Hero information to add destinations to the array in the user model and update the page dynamically with the axios requests.
 ```
@@ -204,11 +204,11 @@ let destinationsArray = []
 ```
  
  
-![](searchbar.gif)
+![](client/src/assets/searchbar.gif)
  
 ##### Upload Picture
 Lastly I created the page where the user can upload a picture for their Jetflix profile. This was a form similarly designed to the login and registration pages. For the image upload I used cloudinary. The image is posted to cloudinary via an axios post request and the url is stored on the user model so this can be shown on their profile page.
-![](upload.gif)
+![](client/src/assets/upload.gif)
  
 ### Key learnings
 The scope of our project was quite a challenge as we had many different aspects we wanted to incorporate but being able to divide tasks and help each other out made a big difference. This was also the first project working on a GitHub repository as a group which was a great learning curve. We didn’t experience too many issues with merging and working together on this which was a big win.
